@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Salt Flats Legal</title>
+
+    <style>
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            /* Center horizontally */
+            align-items: center;
+            /* Center vertically */
+            font-family: sans-serif;
+            /* Mesmerizing animated gradient background */
+            background: linear-gradient(-45deg, #ff6ec4, #7873f5, #42e695, #ffb86c);
+            background-size: 400% 400%;
+            animation: gradientBG 15s ease-in-out infinite;
+        }
+
+        @keyframes gradientBG {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        .marquee {
+            font-size: clamp(2rem, 1vw, 3rem);
+            /* 2rem minimum, scales up to 8vw, max 5rem */
+            margin: 0;
+            text-align: center;
+            line-height: 1.1;
+        }
+
+        #links {
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            text-align: center;
+            font-size: clamp(2rem, 2vw, 2rem);
+        }
+    </style>
+
+    <script>
+        window.console = window.console || function (t) { };
+    </script>
+
+
+
+    <script>
+        if (document.location.search.match(/type=embed/gi)) {
+            window.parent.postMessage("resize", "*");
+        }
+    </script>
+
+
+</head>
+
+<body translate="no">
+    <div class="marquee">
+        <h1 class="logo">"Don't commit a felony while committing a misdemeanor."</h1>
+    </div>
+
+
+    <div id="links">
+        <a
+            href="https://web.archive.org/web/20250420110828/https://www.ksl.com/article/51297199/utah-judge-resigns-after-accusations-of-sexual-abuse-sharing-weed-pen">Utah
+            judge resigns</a>
+
+    </div>
+</body>
+
+</html>
